@@ -157,7 +157,7 @@ class Commander extends Command{
 			}
 
 			// Create database
-			$sql = "CREATE DATABASE " . $db_name;
+			$sql = "CREATE DATABASE `" . $db_name . "`";
 			if ($conn->query($sql) === TRUE) {
 				$output->writeln("<info>Database created successfully</info>");
 			} else {
